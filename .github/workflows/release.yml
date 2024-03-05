@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - feature/test-helm
+      - gh-pages
 
 jobs:
   release:
