@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "ebridge-web.name" -}}
+{{- define "interface-test.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "ebridge-web.fullname" -}}
+{{- define "interface-test.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "ebridge-web.chart" -}}
+{{- define "interface-test.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "ebridge-web.labels" -}}
-helm.sh/chart: {{ include "ebridge-web.chart" . }}
-{{ include "ebridge-web.selectorLabels" . }}
+{{- define "interface-test.labels" -}}
+helm.sh/chart: {{ include "interface-test.chart" . }}
+{{ include "interface-test.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "ebridge-web.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "ebridge-web.name" . }}
+{{- define "interface-test.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "interface-test.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "ebridge-web.serviceAccountName" -}}
+{{- define "interface-test.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "ebridge-web.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "interface-test.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
