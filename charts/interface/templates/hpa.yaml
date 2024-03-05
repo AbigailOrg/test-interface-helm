@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "ebridge-web.fullname" . }}
+  name: {{ include "interface-test.fullname" . }}
   labels:
-    {{- include "ebridge-web.labels" . | nindent 4 }}
+    {{- include "interface-test.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "ebridge-web.fullname" . }}
+    name: {{ include "interface-test.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
