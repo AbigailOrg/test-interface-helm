@@ -3,7 +3,7 @@ name: Lint, release and Test Charts
 on:
   push:
     branches:
-      - gh-pages
+      - feature/test-helm
 
 jobs:
   release:
