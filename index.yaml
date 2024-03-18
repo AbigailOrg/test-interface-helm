@@ -1,25 +1,14 @@
 apiVersion: v1
 entries:
-  ebridge-web:
-  - apiVersion: v2
-    appVersion: v1.0.5-alpha
-    created: "2024-03-04T09:08:49.809025255Z"
-    description: A Helm chart for Kubernetes
-    digest: a71c6ab2ca10d027d1e52dddc40f5d121596eb641c613242a1cd8e09b267fe43
-    name: ebridge-web
-    type: application
-    urls:
-    - https://github.com/yongenaelf/test-helm/releases/download/ebridge-web-1.0.0/ebridge-web-1.0.0.tgz
-    version: 1.0.0
   interface-test:
-  - apiVersion: v2
-    appVersion: feature-git-action-test
-    created: "2024-03-05T09:03:57.512401024Z"
-    description: A Helm chart for Kubernetes
-    digest: 6b67eee51eae8c58134be748f338c9526536ad9b2eeaf10b23b25d7453093696
-    name: interface-test
-    type: application
-    urls:
-    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-0.1.0/interface-test-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: feature-git-action-test
+      created: "2024-03-05T09:03:57.512401024Z"
+      description: A Helm chart for Kubernetes
+      digest: 6b67eee51eae8c58134be748f338c9526536ad9b2eeaf10b23b25d7453093696
+      name: interface-test
+      type: application
+      urls:
+        - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-0.1.0/interface-test-0.1.0.tgz
+      version: 0.1.0
 generated: "2024-03-05T09:03:57.512407526Z"
