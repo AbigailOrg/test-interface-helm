@@ -1,9 +1,10 @@
 name: Lint, release and Test Charts
 
 on:
-  push:
-    branches:
-      - feature/test-helm
+  # push:
+  #   branches:
+  #     - feature/test-helm
+  workflow_dispatch:
 
 jobs:
   release:
