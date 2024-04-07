@@ -13,6 +13,69 @@ entries:
     version: 0.1.0
   interface-test-01:
   - apiVersion: v2
+    appVersion: latest
+    created: "2024-03-19T03:49:36.867226472Z"
+    description: A Helm chart for Kubernetes
+    digest: 14ab4183550823b9de89441fc3fddbd0e8024bd2ec11a90d4ee230db41bb4c37
+    maintainers:
+    - email: abigail.deng@ienyan.com
+      name: AbigailDeng
+    name: interface-test-01
+    type: application
+    urls:
+    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.5/interface-test-01-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    created: "2024-03-19T02:53:53.7918994Z"
+    description: A Helm chart for Kubernetes
+    digest: e51f8c1a8c514ffd5dae6b95c1b3df2832371426feb146a04aa8bf3edbe96214
+    maintainers:
+    - email: abigail.deng@ienyan.com
+      name: AbigailDeng
+    name: interface-test-01
+    type: application
+    urls:
+    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.4/interface-test-01-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-19T02:38:21.692300665Z"
+    description: A Helm chart for Kubernetes
+    digest: 7f5d08285e897cbd92d39aef3872f2e110b9f377f71b981fa288ba6f59c8ad9b
+    maintainers:
+    - email: abigail.deng@ienyan.com
+      name: AbigailDeng
+    name: interface-test-01
+    type: application
+    urls:
+    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.3/interface-test-01-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-19T02:29:53.920019837Z"
+    description: A Helm chart for Kubernetes
+    digest: 3d5f28dbd3e27b71568e06d4ab85f25e0d27f2d0ec228d368b2bd8eb5bee4850
+    maintainers:
+    - email: abigail.deng@ienyan.com
+      name: AbigailDeng
+    name: interface-test-01
+    type: application
+    urls:
+    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.2/interface-test-01-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-19T02:27:04.717030475Z"
+    description: A Helm chart for Kubernetes
+    digest: c1ba61a5d0516bbca3babf23aca0729a49228ee2aecb22c7b0d88c67bac38365
+    maintainers:
+    - name: AbigailDeng
+    name: interface-test-01
+    type: application
+    urls:
+    - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.1/interface-test-01-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-03-18T09:39:32.418837453Z"
     description: A Helm chart for Kubernetes
@@ -22,4 +85,4 @@ entries:
     urls:
     - https://github.com/AbigailDeng/test-interface-helm/releases/download/interface-test-01-0.1.0/interface-test-01-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-18T09:39:32.418845668Z"
+generated: "2024-03-19T03:49:36.867255106Z"
